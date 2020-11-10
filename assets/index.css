@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, rgba(40, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%); 
+font-family: 'Poppins', sans-serif;
+/* background: url("images/World1.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover; */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+
+
+.jumbotron{
+    background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, rgba(40, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%); 
+    box-shadow:0px 0px 100px 5px grey;
+    /* margin:150px; */
+}
+
+
+.display-4,.lead{
+    text-align:center;
+    color:white;
+}
+.main{
+    padding: 100px 100px;
+}
+.info{
+    margin: auto;
+    padding: 50px;
+    
+}
+.footer,
+.push {
+  height: 50px;
+}
+.col-6{
+    padding-top:40px;
+    margin: auto;
+    height: 100px;
+    width: 15px;
+    border:2px solid;
+    /* border-radius:125px; */
+    border-color: red;
+    text-align: center;
+    background-color:yellow;
+    opacity: 0.5;px;
+    border-radius: 25px;
+    color:black;
+}
+.footer{
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+@media screen and (max-width: 600px) {
+    .col-6 input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
