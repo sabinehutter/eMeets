@@ -10,7 +10,7 @@
   },
   "rules": {
     "array-callback-return": "error",
-    "camelcase": "error",
+    // "camelcase": "error",
     "curly": "error",
     "dot-notation": "error",
     "eqeqeq": "error",

@@ -5,11 +5,11 @@ const db = require("../../models");
 // routing (html) /commnets
 router.get("/", (req, res) => {
    // get comments from db and send to template
-   db.Test.findAll({})
-      .then(comments => res.render("index", { comments: comments }))
+   db.Group.findAll({})
+      .then(res.render("index"))
       .catch(err => {
          res.status(500);
-         next(err);
+         console.log(err);
       });
 });
 

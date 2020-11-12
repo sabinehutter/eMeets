@@ -5,7 +5,7 @@ const db = require("../../models");
 // /api/commnet/create 
 // post comment route -> back to index
 router.post("/create", (req, res, next) => {
-   db.Test.create(req.body)
+   db.Group.create(req.body)
       .then(newComment => {
          console.log(newComment);
          res.redirect("/");
