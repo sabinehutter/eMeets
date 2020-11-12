@@ -8,7 +8,6 @@ id INT AUTO_INCREMENT,
 joined_group VARCHAR(100) NOT NULL,
 first_name VARCHAR(10) NOT NULL,
 last_name VARCHAR(10) NOT NULL,
-
 social_handle VARCHAR (300) NOT NULL,
 
 zip_code INT,
