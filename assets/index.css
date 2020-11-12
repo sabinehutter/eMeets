@@ -1,7 +1,6 @@
-
 body{
-    background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, #280001 90%, rgba(0, 0, 0, 1) 100%); 
-    font-family: 'Syncopate', sans-serif;
+background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, #280001 90%, rgba(0, 0, 0, 1) 100%); 
+font-family: 'Syncopate', sans-serif;
    
 }
 
@@ -24,7 +23,7 @@ h1{
   color: white;
 }
 
-h3{
+h4{
   color:white;
   text-align:center;
   font-size: 1.5em;
@@ -41,6 +40,7 @@ img{
   display: inline-block;
   margin-left: 80px; 
   margin-right: 80px;
+  box-shadow:0px 0px 100px 40px grey;
   
 
 }
@@ -61,11 +61,14 @@ p{
 }
 
 .row{
-  padding-top:25px;
-  height:15%;
-  width:50%;
-  margin:auto;
+  display: flex;
+  
  
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
 }
 
 .footer{
