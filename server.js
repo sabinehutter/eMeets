@@ -12,7 +12,9 @@ const app = express();
 app.use(express.static("public"));
 
 // Parse application body
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+   extended: true
+}));
 app.use(express.json());
 
 const exphbs = require("express-handlebars");
@@ -34,8 +36,10 @@ app.use(htmlRoutes);
 // error handling
 app.use(errorHandler);
 
-db.sequelize.sync({ force: true }).then(async () => {
-await seed(db.Group);
+db.sequelize.sync({
+   force: true
+}).then(async () => {
+   await seed(db.Group);
 });
 
 app.listen(PORT, () => {
