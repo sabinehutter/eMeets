@@ -1,0 +1,172 @@
+
+body{
+    background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, #280001 90%, rgba(0, 0, 0, 1) 100%); 
+    font-family: 'Syncopate', sans-serif;
+   
+}
+
+.jumbotron{
+    background-image: linear-gradient(0deg, rgba(218, 104, 15, 1) 15%, rgba(186, 78, 0, 1) 25%, rgba(156, 53, 0, 1) 40%, rgba(125, 26, 0, 1) 50%, rgba(95, 0, 0, 1) 65%, rgba(66, 0, 0, 1) 75%, rgba(40, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%); 
+    box-shadow:0px 0px 100px 5px grey;
+    border-radius: 10px;
+    width: 70%;
+    margin:auto;
+    height:35%;
+}
+/* .display-5,.{
+    text-align:center;
+    color:white;
+    padding-top: 5px;
+} */
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+h3{
+  color:white;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+h5{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+img{
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  margin-left: 80px; 
+  margin-right: 80px;
+  
+
+}
+.main {
+    padding: 50px;
+    width: 100%;
+    height: auto;
+}
+
+a{
+  color: white;
+}
+p{
+  color: white;
+  font-size:1.5m;
+  text-align: center;
+  margin:50px 50px;
+}
+
+.row{
+  padding-top:25px;
+  height:15%;
+  width:50%;
+  margin:auto;
+ 
+}
+
+.footer{
+    text-align: center; 
+    color:white;
+    height:1px;  
+    
+}
+span{
+  color:blue;
+}
+
+.signup{
+  text-align: center;
+  padding: 25px;
+  margin:30px;
+  font-size: .9em;
+  
+}
+:placeholder-shown{
+  border-radius: 50px;
+  text-align: center;
+}
+
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f9f9f9;
+  /* min-width: 10px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(218, 104, 15);
+}
+/* this is box for disclaimer , but i cant bootstrap it, so removed ccs ..PT*/
+/* .disclaimer{
+  border-style:solid;
+  border-color: black;
+  background-color:none;
+  color: black;
+  margin:150px;
+  height:auto;
+  margin-top: auto;
+} */
+.form{
+  margin-top: 5px;
+}
+.button{
+  background-color: yellow;
+}
+
+textarea {
+  width: 60%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .col-6 input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  

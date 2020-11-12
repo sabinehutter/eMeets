@@ -1,4 +1,5 @@
 USE studygroup_db;
+
 INSERT INTO member
     (joined_group, first_name, last_name, social_handle, zip_code, img_url)
 VALUES
@@ -15,3 +16,4 @@ INSERT INTO upcoming_events
     (event_group, event_title, event_date, event_url)
 VALUES
     ("Coding Study Group", "Group virtual hang out", "2020-11-24", "#");
+
