@@ -164,6 +164,13 @@ textarea {
   resize: none;
 }
 
+.area2{
+  background-color: white;
+  height: 15%;
+
+  
+}
+
 
 @media screen and (max-width: 600px) {
     .col-6 input[type=submit] {
