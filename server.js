@@ -28,8 +28,6 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// var routes = require("./controllers/burgersController.js");
-
 app.use("/api", apiRoutes);
 app.use(htmlRoutes);
 
@@ -37,7 +35,7 @@ app.use(htmlRoutes);
 app.use(errorHandler);
 
 db.sequelize.sync({
-   force: true
+   // force: true
 }).then(async () => {
    await seed(db.Group);
 });

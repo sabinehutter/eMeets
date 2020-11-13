@@ -6,10 +6,10 @@ const db = require("../../models");
 router.get("/", (req, res) => {
    // get comments from db and send to template
    db.Group.findAll({})
-      .then(res.render("index"))
+      .then(group_name => res.render("index", {group_name: group_name}))
       .catch(err => {
          res.status(500);
-         console.log(err);
+         next(err);
       });
 });
 
