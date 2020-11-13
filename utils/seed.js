@@ -1,7 +1,8 @@
-module.exports = function(table) {
+module.exports = function() {
    if (process.env !== "production") {
       console.log("\n🚀 init table seed");
-      return table.create({ comment: "🚀 init" });
+      return "init table seed";
+      // table.create({});
    }
    return Promise.resolve();
 };

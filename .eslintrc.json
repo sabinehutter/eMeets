@@ -10,7 +10,7 @@
   },
   "rules": {
     "array-callback-return": "error",
-    "camelcase": "error",
+    // "camelcase": "error",
     "curly": "error",
     "dot-notation": "error",
     "eqeqeq": "error",
@@ -27,7 +27,7 @@
     "no-unreachable": "error",
     "no-unused-vars": "error",
     "no-var": "error",
-    "prefer-arrow-callback": "error",
+    // "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
