@@ -4,6 +4,7 @@ const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
 const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
+const config = require("./config/");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -35,9 +36,9 @@ app.use(htmlRoutes);
 app.use(errorHandler);
 
 db.sequelize.sync({
-   // force: true
+   force: config.sync
 }).then(async () => {
-   await seed(db.Group);
+   await seed();
 });
 
 app.listen(PORT, () => {
