@@ -2,12 +2,15 @@ const express = require("express");
 const router = express.Router();
 const commentsRoute = require("./comments");
 const memberRoute = require("./member");
-const group = require("./group");
+const groupRoute = require("./group");
+const newMemberRoute = require("./newMember");
 
 
 router.use("/member", memberRoute);
 
-router.get("/group/:groupid", group);
+router.use("/group", groupRoute);
+
+router.get("/newMember", newMemberRoute);
 // get route -> index
 
 router.get("/", (req, res) => {
