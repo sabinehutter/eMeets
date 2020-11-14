@@ -1,2 +1,9 @@
-<h1>Upcoming Events</h1>
-{{log upcomingEvents}}
+<div class="row">
+    <div class="col col-12 text-center">
+        <h1>Upcoming Events</h1>
+        {{#each upcomingEvents}}
+        <div class="card">{{this.dataValues.event_title}}</div>
+        {{/each}}
+    </div>
+</div>
+</div>

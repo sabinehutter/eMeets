@@ -30,5 +30,11 @@ router.get("/", function(req, res, next) {
       });
 });
 
+router.post ("/",function(req,res,next){
+   db.User.create();
+   // created 
+   // redirect res.redirect ("/members")
+});
+
 
 module.exports = router;
