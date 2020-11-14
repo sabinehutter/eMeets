@@ -34,7 +34,32 @@ module.exports = function() {
          })
          .catch((err) => {
             console.log(err);
-         }),];
+         }),
+      
+      db.UpcomingEvents.bulkCreate([
+         {
+            event_group:"Group1",
+            event_title:"Event1",
+            event_date:"2020-11-14",
+            event_url:"https://event.com"
+      
+         },
+         {
+            event_group:"Group2",
+            event_title:"Event2",
+            event_date:"2020-11-24",
+            event_url:"https://event2.com"},
+      
+         
+      ])
+         .then(()=> {
+            console.log("seed the database");
+         })
+         .catch((err) => {
+            console.log(err);
+         })
+      
+      ];
       
    }
    return Promise.resolve();
