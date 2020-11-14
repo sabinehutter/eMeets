@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
          autoIncrement: true,
       },
       joined_group: {
-         type: DataTypes.STRING
+         type: DataTypes.INTEGER
       },
       first_name :{
          type: DataTypes.STRING
@@ -27,6 +27,11 @@ module.exports = function(sequelize, DataTypes) {
          type: DataTypes.STRING
       }, 
    });
+
+   Member.associate = function(model) {
+       
+      Member.belongsToMany(model.Group, { through: model.Followers });
+ 
+   };
    return Member;
 };
- 
