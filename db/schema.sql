@@ -17,12 +17,9 @@ social_handle VARCHAR
     (300) NOT NULL,
 
 zip_code INT,
-description VARCHAR
-    (500),
-img_url VARCHAR
-    (1000),
-PRIMARY KEY
-    (id)
+description VARCHAR (500),
+-- img_url VARCHAR (1000),
+PRIMARY KEY(id)
 );
 
 
