@@ -7,7 +7,7 @@ const group = require("./group");
 
 router.use("/member", memberRoute);
 
-router.use("/group/:groupid", group);
+router.get("/group/:groupid", group);
 // get route -> index
 
 router.get("/", (req, res) => {
