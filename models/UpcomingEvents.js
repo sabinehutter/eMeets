@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-   const upcoming_events = sequelize.define("upcoming_events", {
+   const UpcomingEvents = sequelize.define("UpcomingEvents", {
       id: {
          type: DataTypes.INTEGER,
          primaryKey: true,
@@ -18,5 +18,5 @@ module.exports = function(sequelize, DataTypes) {
          type: DataTypes.STRING
       }
    });
-   return upcoming_events ;
+   return UpcomingEvents ;
 };
