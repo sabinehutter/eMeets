@@ -3,13 +3,14 @@
     <div class="container text-center">
         <h1 class="heading text-center">New Member</h1>
     </div>
-    <form action="/api/create-event" method="POST">
-        <input type="text" class="form-control" name="comment" value="" placeholder="First Name" id="enter_text">
-        <input type="text" class="form-control" name="comment" value="" placeholder="Last Name" id="enter_text">
-        <input type="text" class="form-control" name="comment" value="" placeholder="Email" id="enter_text">
-        <input type="text" class="form-control" name="comment" value="" placeholder="Group Title" id="enter_text">
-        <input type="text" class="form-control" name="comment" value="" placeholder="Location" id="enter_text">
-        <input type="text" class="form-control" name="comment" value="" placeholder="Describe Yourself" id="enter_text">
-        <button type="submit" class="btn btn-dark" id="text-enter-button">Submit</button>
+    {{!-- <form action="/api/create-event" method="POST"> --}}
+    <form class="create-form">
+        <input type="text" class="form-control first-name" name="comment" value="" placeholder="First Name" id="enter_text">
+        <input type="text" class="form-control last-name" name="comment" value="" placeholder="Last Name" id="enter_text">
+        <input type="text" class="form-control email" name="comment" value="" placeholder="Email" id="enter_text">
+        <input type="text" class="form-control group-title" name="comment" value="" placeholder="Group Title" id="enter_text">
+        <input type="text" class="form-control location" name="comment" value="" placeholder="Location" id="enter_text">
+        <input type="text" class="form-control member-description" name="comment" value="" placeholder="Describe Yourself" id="enter_text">
+        <button type="submit" class="btn btn-dark member-submit" id="text-enter-button">Submit</button>
     </form>
 </main>
