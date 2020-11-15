@@ -7,12 +7,4 @@ router.get("/createGroup", function (req, res) {
    res.render("createGroup");
 });
 
-
-
-
-
-
-
-
-
 module.exports = router;
