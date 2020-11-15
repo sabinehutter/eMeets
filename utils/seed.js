@@ -26,6 +26,22 @@ module.exports = function() {
             description:"Group 2",
             img_url:"#",
       
+         },{
+            first_name:"Jenna",
+            last_name:"Smith",
+            social_handle:"https://twitter.com/JennaSmith",
+            zip_code:"60614",
+            description:"Group 3",
+            img_url:"#",
+      
+         },{
+            first_name:"John",
+            last_name:"Smith",
+            social_handle:"https://twitter.com/JohnSmith",
+            zip_code:"48170",
+            description:"Group 3",
+            img_url:"#",
+      
          },
 
       ])
