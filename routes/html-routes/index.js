@@ -9,7 +9,7 @@ const createGroupRoute = require("./createGroup");
 
 router.use("/member", memberRoute);
 
-router.use("/group", groupRoute);
+router.get("/group/:groupid", groupRoute);
 
 router.get("/createGroup", createGroupRoute);
 

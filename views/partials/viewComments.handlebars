@@ -1,7 +1,7 @@
 <div class="row">
    {{#each group_name}}
    <div class="col-5 group-card" style="font-size: 36px">{{this.dataValues.group_name}}
-      <div style="font-size: 16px">View Group</div>
+      <div style="font-size: 16px; text-color: #000000"><a href="/group/{{this.dataValues.id}}">View Group<a></div>
    </div>
    {{/each}}
 </div>
