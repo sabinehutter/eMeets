@@ -104,3 +104,14 @@ footer{
   text-align: center;
   padding: 15px;
 }
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+a{
+  color: #ffffff;
+}
