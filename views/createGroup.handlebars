@@ -3,10 +3,10 @@
     <div class="col col-12 text-center">
         <div>Create New Group</div>
         <div>
-            <form action="/api/create-event" method="POST">
-                <input type="text" class="form-control" name="comment" value="" placeholder="Group Title"
+            <form action="/api/createGroup/create" method="POST">
+                <input type="text" class="form-control" name="group_name" value="" placeholder="Group Title"
                     id="enter_text">
-                <input type="text" class="form-control" name="comment" value="" placeholder="Description Of Group"
+                <input type="text" class="form-control" name="group_blurb" value="" placeholder="Description Of Group"
                     id="enter_text">
                 <button type="submit" class="btn btn-dark" id="text-enter-button">submit</button>
             </form>
