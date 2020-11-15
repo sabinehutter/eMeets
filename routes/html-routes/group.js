@@ -18,7 +18,7 @@ router.get("/:groupid?", (req, res) => {
       }),
       db.Member.findAll({}),
       db.UpcomingEvents.findAll({})
-   ]).then(data => res.render("groupView", {members: data[0],upcomingEvents:data[2]}))
+   ]).then(data => res.render("groupView", {members: data[1],upcomingEvents:data[2]}))
   
       .catch(err => {
          res.status(500);

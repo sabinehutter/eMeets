@@ -1,12 +1,20 @@
 <div class="row">
+    <div class="col col-12 text-center">
+   <h1>Members</h1>
 
-   <div style="font-size: 16px">View Group</div>
-   {{#each group_name}}
-   <div class="col-5 group-card" style="font-size: 36px">{{this.dataValues.group_name}}
-      <div style="font-size: 16px">View Group</div>
-      <div style="font-size: 16px">View Group</div>
-      <div style="font-size: 16px">View Group</div>
-      <div style="font-size: 16px">View Group</div>
-   </div>
-   {{/each}}
+        {{#each members}}
+
+
+        <div class="col col-12 text-center">
+        <div class="card" style="width: 20rem;">
+        <div class="card-body">
+        <h5 class="card-title">{{this.dataValues.first_name}} {{this.dataValues.last_name}}</h5>
+        <p class="card-text">{{this.dataValues.description}}</p>
+        <p class="card-text">{{this.dataValues.zip_code}}</p>
+        <a href="''" + {{this.dataValues.social_handle}} + "''" class="btn btn-primary">{{this.dataValues.social_handle}}</a>
+        </div>
+        </div>
+        </div>
+        {{/each}}
+</div>
 </div>
