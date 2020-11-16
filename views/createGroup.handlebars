@@ -1,7 +1,10 @@
 {{>header}}
+<video autoplay muted loop id="myVideo">
+  <source src="/assets/images/200314 _Work Life_02_ 4k_058.mp4" type="video/mp4">
+</video>
 <div class="row">
     <div class="col col-12 text-center">
-        <div>Create New Group</div>
+        <h1>Create New Group</h1>
         <div>
             <form action="/api/createGroup/create" method="POST">
                 <input type="text" class="form-control" name="group_name" value="" placeholder="Group Title"
@@ -11,5 +14,6 @@
                 <button type="submit" class="btn btn-dark" id="text-enter-button">submit</button>
             </form>
         </div>
+</div>
 
 {{>footer}}

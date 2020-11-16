@@ -4,11 +4,11 @@ const db = require("../../models");
 
 // /api/commnet/create 
 // post comment route -> back to index
-router.post("/group/:groupid/create-event", (req, res, next) => {
+router.post("/create", (req, res, next) => {
    db.UpcomingEvents.create(req.body)
       .then(newEvent => {
          console.log(newEvent);
-         res.redirect("/group/:group?");
+         res.redirect("/");
       // optionally return data created
       // res.json(newComment)
       })

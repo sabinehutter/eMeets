@@ -2,24 +2,24 @@
        <div class="col col-12 text-center">
               <h2>Create Event<h2>
                      
-                     <form action="/api/group/1/create-event" method="POST">
+                     <form action="/api/group/{{groupid}}/create" method="POST">
 
                      <input type="text"
                             class="form-control"
-                            name="UpcomingEvents" value=""
+                            name="event_title" value=""
                             placeholder="Event Title"
                             id="enter_text">
 
                      <input type="text"
                             class="form-control"
-                            name="UpcomingEvents"
+                            name="event_date"
                             value=""
                             placeholder="Date (MM/DD/YYYY)"
                             id="enter_text">
 
                      <input type="text"
                             class="form-control"
-                            name="UpcomingEvents"
+                            name="event_url"
                             value=""
                             placeholder="Virtual Meeting Link or Address"
                             id="enter_text">
