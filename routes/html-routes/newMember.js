@@ -7,7 +7,7 @@ router.get("/newMember", function (req, res) {
    res.render("newMember");
 });
 router.post ("/",function(req, res, next){
-   db.Member.create({
+   db.member.create({
       id: req.body.id,
       joined_group: req.body.joined_group,
       first_name: req.body.first_name,
@@ -18,7 +18,7 @@ router.post ("/",function(req, res, next){
       img_url: req.body.img_url,
    })
       .then (()=>{
-         res.redirect("/comments");
+         res.redirect("/members");
       }
          // created 
          // redirect res.redirect ("/members")
