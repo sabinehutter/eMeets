@@ -1,17 +1,19 @@
-<div class="col-md-12 "
-     id="top-bar">
-   <h1> Sequelize box </h1>
+{{!-- Need Header --}}
+{{>header}}
+<div>
+   <img class="img-bg" src="/assets/images/Screen Shot 2020-11-12 at 9.55.03 PM.png">
 </div>
 
 <div class="container">
-   <div class="row">
-
-
-      {{!-- view cooment  --}}
-      {{> viewComments}}
-
+   <div>
+      {{!-- 6 groups handlebars --}}
+      {{>viewComments}}
       {{!-- post comment --}}
-      {{> postComments}}
-
    </div>
 </div>
+
+<div><a href="/createGroup">Create Group</a></div>
+<div><a href="/newMember">Join Now</a></div>
+
+{{!-- Need Footer --}}
+{{>footer}}
