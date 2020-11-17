@@ -24,7 +24,7 @@ for (i = 0; i < 10; i++) {
    const saveButton = $("<button>").addClass("saveBtn col-md-1").html("<i class=\"fas fa-save\"></i>");
    // Placing content above in the DOM in order.
    //appending the container with the row
-   $(".container").append(addRow);
+   $(".container-planner").append(addRow);
    //append the row with the time 
    $(addRow).append(addTime);
    //after the time display the task 
