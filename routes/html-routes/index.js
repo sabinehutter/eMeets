@@ -5,6 +5,7 @@ const memberRoute = require("./member");
 const groupRoute = require("./group");
 const newMemberRoute = require("./newMember");
 const createGroupRoute = require("./createGroup");
+const memberSearch = require("./memberSearch");
 
 
 router.use("/member", memberRoute);
@@ -14,6 +15,9 @@ router.get("/group/:groupid", groupRoute);
 router.get("/createGroup", createGroupRoute);
 
 router.get("/newMember", newMemberRoute);
+
+router.get("/member/:memberid", memberSearch);
+
 // get route -> index
 
 router.get("/", (req, res) => {
