@@ -18,8 +18,15 @@ router.get("/group/:groupid", (req, res) => {
       }),
       db.Member.findAll({}),
       db.UpcomingEvents.findAll({})
-   ]).then(data => res.render("groupView", {group: data[0], members: data[1],upcomingEvents:data[2]}))
-  
+   ]).then(data => {
+      console.log(data[0]);
+      res.render("groupView", {
+         group: data[0],
+         members: data[1],
+         upcomingEvents:data[2]
+      });
+   })
+   
       .catch(err => {
          res.status(500);
          next(err);

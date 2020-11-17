@@ -18,5 +18,11 @@ module.exports = function(sequelize, DataTypes) {
          type: DataTypes.STRING
       }
    });
+   UpcomingEvents.associate = function(model) {
+       
+      UpcomingEvents.belongsTo(model.Group);
+ 
+   };
+ 
    return UpcomingEvents ;
 };

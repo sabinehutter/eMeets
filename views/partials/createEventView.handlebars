@@ -1,8 +1,8 @@
 <div class="row">
        <div class="col col-12 text-center">
               <h2>Create Event<h2>
-                     
-                     <form action="/api/group/{{groupid}}/create" method="POST">
+                     {{#each group}}
+                     <form action="/api/createEvent/{{this.dataValues.id}}/create" method="POST">
 
                      <input type="text"
                             class="form-control"
@@ -27,4 +27,5 @@
                      <button type="submit" class="btn btn-dark event-submit" id="text-enter-button">Create Event</button>
 
                      </form>
+                     {{/each}}
  </div>
