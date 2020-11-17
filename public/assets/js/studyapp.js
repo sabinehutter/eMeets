@@ -3,13 +3,14 @@ $(function() {
       // code to get /group/:groupid? route
    });
 
-   $(".member-submit").on("click", function() {
+   $("#submitMember").on("click", function() {
+      console.log("hello");
       // code to get /group/:groupid? route
       event.preventDefault();
 
       const newMember = {
          first_name: $(".first-name").val().trim(),
-         last_name: $(".first-name").val().trim(),
+         last_name: $(".last-name").val().trim(),
          email: $(".email").val().trim(),
          group_title: $(".group-title").val().trim(),
          location: $(".location").val().trim(),

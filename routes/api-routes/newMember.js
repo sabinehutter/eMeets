@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
-// const db = require("../../models");
+const db = require("../../models");
 
 // routing (html) /member
-router.get("/newMember", function (req, res) {
-   res.render("newMember");
-});
-router.post ("/",function(req, res, next){
+
+router.post ("/newMembers",function(req, res, next){
+   console.log(req.body);
    db.Member.create({
       id: req.body.id,
       joined_group: req.body.joined_group,

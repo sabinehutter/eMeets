@@ -4,11 +4,11 @@ module.exports = function() {
    if (config.sync === true) {
       console.log("\n🚀 init table seed");
       return [db.Group.bulkCreate([
-         {group_name:"Group 1"},
-         {group_name:"Group 2"},
-         {group_name:"Group 3"},
-         {group_name:"Group 4"},
-         {group_name:"Group 5"},
+         {group_name:"Javascript"},
+         {group_name:"CSS & SASS"},
+         {group_name:"Python"},
+         {group_name:"Express"},
+         {group_name:"Node"},
          {group_name:"Group 6"},
       ])
          .then(()=> {
