@@ -11,6 +11,6 @@ router.use("/createGroup", createGroupRoute);
 
 router.use("/group", groupRoute);
 
-router.use("/newMember", newMember);
+router.post("/newMemberRegister", newMember);
 
 module.exports = router;
