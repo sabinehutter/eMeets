@@ -15,8 +15,10 @@ module.exports = function(sequelize, DataTypes) {
    Group.associate = function(model) {
        
       Group.belongsToMany(model.Member, { through: model.Followers });
- 
+      Group.hasMany(model.UpcomingEvents);
    };
+
+   
 
    // Profile.belongsToMany(User, { through: User_Profile });
    return Group;
