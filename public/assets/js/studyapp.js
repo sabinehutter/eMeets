@@ -12,7 +12,14 @@ function selectionChange(){
 
 }
 
+function groupSelection(){
+   const groupName = $(".group-name").text();
 
+   const currentMember = $(`[data-id = ${groupName}]`);
+
+   currentMember.show();
+}
+groupSelection();
 
 $(function() {
    $(".group-card").on("click", function() {
