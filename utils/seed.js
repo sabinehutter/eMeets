@@ -23,7 +23,7 @@ module.exports = function() {
             last_name:"Olivia",
             social_handle:"https://twitter.com/IngrahamAngle",
             zip_code:"11201",
-            description:"Group 2",
+            description:"Looking to learn more about everything coding",
             img_url:"#",
             group: "Javascript"
       
@@ -32,7 +32,7 @@ module.exports = function() {
             last_name:"Smith",
             social_handle:"https://twitter.com/JennaSmith",
             zip_code:"60614",
-            description:"Group 3",
+            description:"Focused on front-end development",
             img_url:"#",
             group: "Python"
       
@@ -41,7 +41,7 @@ module.exports = function() {
             last_name:"Smith",
             social_handle:"https://twitter.com/JohnSmith",
             zip_code:"48170",
-            description:"Group 3",
+            description:"Aspiring full-stack developer",
             img_url:"#",
             group: "Node"
       
@@ -57,14 +57,14 @@ module.exports = function() {
       
       db.UpcomingEvents.bulkCreate([
          {
-            event_group:"Group1",
+            event_group:"Python",
             event_title:"Event1",
             event_date:"2020-11-14",
             event_url:"https://event.com"
       
          },
          {
-            event_group:"Group2",
+            event_group:"Javascript",
             event_title:"Event2",
             event_date:"2020-11-24",
             event_url:"https://event2.com"},

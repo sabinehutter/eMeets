@@ -1,11 +1,16 @@
 <div class="row" style="margin-top: 35vh;">
     <div class="col col-12 text-center">
-        <div class="section-text" >Upcoming Events</div>
-        {{#each upcomingEvents}}
-        <div style="text-algin: left">{{this.dataValues.event_title}}</div>
-        <div>{{this.dataValues.event_date}}</div>
-        <div>{{this.dataValues.event_url}}</div>
-        {{/each}}
+        <div class="section-text">Upcoming Events
+            {{#each upcomingEvents}}
+            <div  style = "display: none" data-id={{this.dataValues.event_group}}>
+
+
+                    <div style="text-algin: left">{{this.dataValues.event_title}}</div>
+                    <div>{{this.dataValues.event_date}}</div>
+                    <div>{{this.dataValues.event_url}}</div>
+            </div>
+
+            {{/each}}
+        </div>
     </div>
-</div>
 </div>
