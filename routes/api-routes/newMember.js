@@ -5,7 +5,6 @@ const db = require("../../models");
 // routing (html) /member
 
 router.post("/newMemberRegister",function(req, res, next){
-   console.log(req.body);
    db.Member.create({
       id: req.body.id,
       joined_group: req.body.joined_group,
@@ -17,7 +16,6 @@ router.post("/newMemberRegister",function(req, res, next){
       img_url: req.body.img_url,
    })
       .then (()=>{
-         console.log("Inside .then");
          res.redirect ("/member");
       }
          // created 

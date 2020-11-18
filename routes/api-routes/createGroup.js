@@ -5,8 +5,7 @@ const db = require("../../models");
 
 router.post("/create", (req, res, next) => {
    db.Group.create(req.body)
-      .then(newGroup => {
-         console.log(newGroup);
+      .then(() => {
          res.redirect("/");
       // optionally return data created
       // res.json(newComment)

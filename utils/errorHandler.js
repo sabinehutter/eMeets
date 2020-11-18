@@ -1,6 +1,5 @@
-module.exports = function(err, req, res, next) {
+module.exports = function(err, req, res) {
    // potential switch based on error code or msg
-   console.log(next);
 
    // log error to monitor
    // for development

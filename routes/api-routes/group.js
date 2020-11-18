@@ -5,7 +5,6 @@ const db = require("../../models");
 router.get("/", function(req, res, next) {
    db.Group.findAll({})
       .then(result => {
-         console.log(result);
          res.json(result);
       }
       ) .catch(err => {

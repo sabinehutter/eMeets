@@ -1,3 +1,19 @@
+
+// eslint-disable-next-line no-unused-vars
+function selectionChange(){
+
+   $("[data-id]").parent().hide();
+
+   selectionId = $(".memberSelection").val()[0];
+
+   const currentMember = $(`[data-id = ${selectionId}]`);
+
+   currentMember.parent().show();
+
+}
+
+
+
 $(function() {
    $(".group-card").on("click", function() {
       // code to get /group/:groupid? route
@@ -16,7 +32,6 @@ $(function() {
          description: $(".description").val().trim()
       };
 
-      console.log("hello");
 
       // Send the POST request.
       $.ajax({

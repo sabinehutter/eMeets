@@ -29,6 +29,9 @@ module.exports = function(sequelize, DataTypes) {
       img_url :{
          type: DataTypes.STRING
       }, 
+      group :{
+         type: DataTypes.STRING
+      }, 
    });
 
    Member.associate = function(model) {

@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row" style="margin-top: 35vh;">
     <div class="col col-12 text-center">
-        <h1>Upcoming Events</h1>
+        <div class="section-text" >Upcoming Events</div>
         {{#each upcomingEvents}}
-        <div class="card">{{this.dataValues.event_title}}</div>
-        <div class="card">{{this.dataValues.event_date}}</div>
-        <div class="card">{{this.dataValues.event_url}}</div>
+        <div style="text-algin: left">{{this.dataValues.event_title}}</div>
+        <div>{{this.dataValues.event_date}}</div>
+        <div>{{this.dataValues.event_url}}</div>
         {{/each}}
     </div>
 </div>

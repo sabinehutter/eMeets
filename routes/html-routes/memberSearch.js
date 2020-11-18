@@ -2,15 +2,14 @@ const express = require("express");
 const router = express.Router();
 const db = require("../../models");
 
-// routing (html) /member
-router.get("/", (req, res) => {
+
+
+router.get("/member", (req, res) => {
+   console.log("in member html route");
    // get comments from db and send to template
-// res.render("member",[]);
+   // res.render("member",[]);
    return Promise.all([
       db.Member.findAll({
-         where: {
-            first_name: 2
-         }
       })
    ]).then(data => res.render("member", {members: data[0]}))
   

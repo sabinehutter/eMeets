@@ -8,7 +8,16 @@ $(document).ready(function() {
    // For loop display tasks from local storage
    hourArr = $(".hour").toArray();
    for (i = 0; i < hourArr.length; i++) {
-      $(hourArr[i]).siblings("textarea").text(localStorage.getItem($(hourArr[i]).attr("data-time")));
+      let hourVal = localStorage.getItem($(hourArr[i]).attr("data-time"));
+
+      // hourVal.replace("", "Please Enter Task");
+
+      if (hourVal === null){
+         hourVal = "Enter Schedule";
+         
+      }
+
+      $(hourArr[i]).siblings("textarea").text(hourVal);
    }
 });
 // For loop for rows with time, task, and save buttons
