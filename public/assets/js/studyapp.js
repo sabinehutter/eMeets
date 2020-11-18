@@ -1,23 +1,15 @@
 
+// eslint-disable-next-line no-unused-vars
 function selectionChange(){
-   selection = $(".memberSelection").val();
-   cleanedSelection = selection.split(".")[0];
 
-   const memberId = {
-      memberid: cleanedSelection,
-   };
+   $("[data-id]").parent().hide();
 
-   $.ajax({
-      type: "GET",
-      url: "/member",
-      data: memberId
-   }).then(
-      function() {
-         console.log("successfully seach member!");
-         // Reload the page to get the updated list
-         // window.location.pathname = "/member";
-      }
-   );
+   selectionId = $(".memberSelection").val()[0];
+
+   const currentMember = $(`[data-id = ${selectionId}]`);
+
+   currentMember.parent().show();
+
 }
 
 

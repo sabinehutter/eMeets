@@ -8,7 +8,7 @@ const createGroupRoute = require("./createGroup");
 const memberSearch = require("./memberSearch");
 
 
-router.get("/member/:memberid", memberSearch);
+// router.get("/member/:memberid", memberSearch);
 
 router.get("/member", memberSearch);
 

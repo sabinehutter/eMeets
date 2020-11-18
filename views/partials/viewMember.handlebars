@@ -1,18 +1,23 @@
 <div class="row">
     <div class="col col-12 text-center">
-   <h1>Member Info</h1>
+        <h1>Member Info</h1>
 
 
+        {{#each members}}
+        <div style="display : none">
+            <div class="col col-12 text-center" data-id={{this.dataValues.id}}>
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.dataValues.first_name}} {{this.dataValues.last_name}}</h5>
+                        <p class="card-text">{{this.dataValues.description}}</p>
+                        <p class="card-text">{{this.dataValues.zip_code}}</p>
+                        <a href="''" + {{this.dataValues.social_handle}} + "''"
+                            class="btn btn-primary">{{this.dataValues.social_handle}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="col col-12 text-center">
-        <div class="card" style="width: 20rem;">
-        <div class="card-body">
-        <h5 class="card-title">{{selectedMember.dataValues.first_name}} {{selectedMember.dataValues.last_name}}</h5>
-        <p class="card-text">{{selectedMember.dataValues.description}}</p>
-        <p class="card-text">{{selectedMember.dataValues.zip_code}}</p>
-        <a href="''" + {{selectedMember.dataValues.social_handle}} + "''" class="btn btn-primary">{{selectedMember.dataValues.social_handle}}</a>
-        </div>
-        </div>
-        </div>
-</div>
+        {{/each}}
+    </div>
 </div>
