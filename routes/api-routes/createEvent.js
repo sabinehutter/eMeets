@@ -8,6 +8,7 @@ router.post("/:id/create", (req, res, next) => {
    db.UpcomingEvents.create({
       event_title: req.body.event_title,
       event_date: req.body.event_date,
+      event_group: req.body.event_group,
       event_url: req.body.event_url,
       GroupId: req.params.id
 

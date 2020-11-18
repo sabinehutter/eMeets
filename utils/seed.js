@@ -57,14 +57,14 @@ module.exports = function() {
       
       db.UpcomingEvents.bulkCreate([
          {
-            event_group:"Group1",
+            event_group:"Python",
             event_title:"Event1",
             event_date:"2020-11-14",
             event_url:"https://event.com"
       
          },
          {
-            event_group:"Group2",
+            event_group:"Javascript",
             event_title:"Event2",
             event_date:"2020-11-24",
             event_url:"https://event2.com"},
