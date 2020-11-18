@@ -9,7 +9,6 @@ router.get("/group/:groupid", (req, res) => {
    // get comments from db and send to template
 // res.render("member",[]);
 
-   console.log(req.params);
    return Promise.all([
       db.Group.findAll({
          where : {
@@ -19,7 +18,6 @@ router.get("/group/:groupid", (req, res) => {
       db.Member.findAll({}),
       db.UpcomingEvents.findAll({})
    ]).then(data => {
-      console.log(data[0]);
       res.render("groupView", {
          group: data[0],
          members: data[1],

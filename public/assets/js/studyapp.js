@@ -1,3 +1,27 @@
+
+function selectionChange(){
+   selection = $(".memberSelection").val();
+   cleanedSelection = selection.split(".")[0];
+
+   const memberId = {
+      memberid: cleanedSelection,
+   };
+
+   $.ajax({
+      type: "GET",
+      url: "/member",
+      data: memberId
+   }).then(
+      function() {
+         console.log("successfully seach member!");
+         // Reload the page to get the updated list
+         // window.location.pathname = "/member";
+      }
+   );
+}
+
+
+
 $(function() {
    $(".group-card").on("click", function() {
       // code to get /group/:groupid? route
@@ -16,7 +40,6 @@ $(function() {
          description: $(".description").val().trim()
       };
 
-      console.log("hello");
 
       // Send the POST request.
       $.ajax({
