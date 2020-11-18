@@ -51,6 +51,8 @@ for (i = 0; i < 10; i++) {
    } else if (now.isAfter(moment("9:00 AM", "hh:mm A").add(i, "hours"), "hour")) {
       $(addTask).addClass("past");
    } 
+   
+   
 }
 // Save click event to store data in the local storage
 $(".saveBtn").on("click", function() {
