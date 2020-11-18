@@ -12,7 +12,7 @@ router.post("/:id/create", (req, res, next) => {
       GroupId: req.params.id
 
    })
-      .then(newEvent => {
+      .then(() => {
          res.redirect("/");
       // optionally return data created
       // res.json(newComment)
