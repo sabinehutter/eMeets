@@ -25,6 +25,7 @@ module.exports = function() {
             zip_code:"11201",
             description:"Group 2",
             img_url:"#",
+            group: "Javascript"
       
          },{
             first_name:"Jenna",
@@ -33,6 +34,7 @@ module.exports = function() {
             zip_code:"60614",
             description:"Group 3",
             img_url:"#",
+            group: "Python"
       
          },{
             first_name:"John",
@@ -41,6 +43,7 @@ module.exports = function() {
             zip_code:"48170",
             description:"Group 3",
             img_url:"#",
+            group: "Node"
       
          },
 

@@ -8,7 +8,6 @@ router.get("/",(req, res,next) => {
    // get comments from db and send to template
    db.Group.findAll({})
       //.then (result => {
-   // console.log(result);
    //res.json(result);
    // }
    // ) .catch(err => {
