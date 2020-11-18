@@ -5,7 +5,7 @@ const db = require("../../models");
 // routing (html) /member
 
 
-router.get("/memberSearch:memberid", function(req, res, next) {
+router.get("/memberSearch/:memberid", function(req, res, next) {
    console.log("In member seach api routes");
    db.Group.findAll({
       // where : {

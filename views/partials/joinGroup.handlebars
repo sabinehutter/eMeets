@@ -1,10 +1,15 @@
-<div class="row">
-    <div class="col col-12 text-center">
+
+<div>
+  <img class="group-header-img" src="/assets/images/Mask Group 4@2x.png">
+  
+   <div>
         {{log groups}}
         {{#each group}}
-        <div>{{this.dataValues.group_name}}</div>
+        <div stlye="text-align: center">{{this.dataValues.group_name}}</div>
         {{/each}}
-        <a class="join-btn" href="#"><button>Join Group</button></a>
+        
     </div>
+  <button class="cta-1"><a class="join-btn" href="/newMember">Join Group</a></Join></button>
+  
 </div>
-</div>
+
