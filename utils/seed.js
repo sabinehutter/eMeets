@@ -23,7 +23,7 @@ module.exports = function() {
             last_name:"Olivia",
             social_handle:"https://twitter.com/IngrahamAngle",
             zip_code:"11201",
-            description:"Group 2",
+            description:"Looking to learn more about everything coding",
             img_url:"#",
             group: "Javascript"
       
@@ -32,7 +32,7 @@ module.exports = function() {
             last_name:"Smith",
             social_handle:"https://twitter.com/JennaSmith",
             zip_code:"60614",
-            description:"Group 3",
+            description:"Focused on front-end development",
             img_url:"#",
             group: "Python"
       
@@ -41,7 +41,7 @@ module.exports = function() {
             last_name:"Smith",
             social_handle:"https://twitter.com/JohnSmith",
             zip_code:"48170",
-            description:"Group 3",
+            description:"Aspiring full-stack developer",
             img_url:"#",
             group: "Node"
       
