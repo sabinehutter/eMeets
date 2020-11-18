@@ -160,6 +160,7 @@ padding-bottom: 15px;
 padding-right: 30px;
 padding-left: 30px;
 border-radius:30px;
+
 }
 
 .cta-2{
@@ -282,4 +283,30 @@ textarea{
   top:0;
   object-fit: cover;
 }
-
+.group-name{
+  color: white;
+  font-size: 40px;
+  padding-left: 43%;
+  padding-right:80%;
+  
+}
+.join-btn{
+  background-color:transparent;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 70px;
+  padding-left: 70px;
+  border-radius:30px;
+  border-color: white !important;
+  margin: auto;
+  display: block;
+  
+}
+.newMemberJoin{
+  background-color: #F79626;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-right: 30px;
+padding-left: 30px;
+border-radius:30px;
+}
