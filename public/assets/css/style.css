@@ -319,3 +319,15 @@ padding-right: 30px;
 padding-left: 30px;
 border-radius:30px;
 }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  text-align: left;
+
+}
+.navbar{
+  color: white;
+  
+}

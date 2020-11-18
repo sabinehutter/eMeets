@@ -1,17 +1,23 @@
-# Welcome to eMeet!
+# Welcome to eMeets!
   ![badmath](https://img.shields.io/badge/license-MIT-green)
   ![badmath](https://img.shields.io/badge/build-passing-orange)
 
   # How to Get Started the Easy, Seamless Education Application
+  * First the user will run the database through Mysql
+  * Then the user will run the code through npm node after installing
+  * User will run  node server.js in terminal to run the site on localhost:3000
+  * Our team has run the site on Heroku where you can skip these steps and go to our URL below!
+
 
   ## Description
-   This application allows you to automatically track burgers you ate and did not eat. 
+   This application was designed for students to aid in collaboration and communication whether studying in-person or virtually. eMeets not only helps you find students that are studying the same subject, but facilitates and encourages students to schedule study meet ups! The study planner on the Members List page, allows students to plan out their educational schedule and the upcoming event feature encourages students to share sessions with others.
+
    
    When the application begins it will appear in your terminal as the photo below. 
    
    ![Application Entry](https://github.com/sabinehutter/Eat-Da-Burger-Application/blob/main/public/assets/burger_intro.png)
 
-   This application prompts you to enter additional burgers and decide whether to eat them or not!
+
    
     
   ## Hosted Application
@@ -30,7 +36,7 @@
   * [Questions](#questions)
 
   ## Installation
-    Navigate to the working directoory and run npm install and run 'node server.js' to begin running the application. The application will then open on your terminal. 
+    Navigate to the working directory and run npm install and run 'node server.js' to begin running the application. The application will then open in your browser on localhost:3000 
 
   ## Usage
     This project uses Javascript, HTML, CSS, Bootstrap, and jQuery and the following npm packages : express, express-handlebars, eslint, mysql, sequelize.
@@ -39,7 +45,7 @@
   MIT
 
   ## Contributing
-  Please contact our group to recieve the detailed contribution guidelines!
+  Please contact our group to receive the detailed contribution guidelines!
 
   ## Badges
   ![badmath](https://img.shields.io/badge/license-MIT-green)
