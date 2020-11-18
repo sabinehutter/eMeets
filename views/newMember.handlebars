@@ -1,12 +1,24 @@
 {{>header}}
-<div class="row">
-    <div class="col col-12 text-center">
+
+ <video autoplay muted loop id="myVideo">
+  <source src="/assets/images/200428_Work From Home_01_4k_026.mp4" type="video/mp4">
+</video>
+<div class="row" style=" width:500px;
+ height:500px;
+ margin:0 auto;
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin-left:-250px;
+ margin-top:-250px;">
+    <div class="col col-12 text-center group-card" style="background-color: white; border-radius: 15px; background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px); padding: 30px;">
         <h1>New Member</h1>
 
 
 
         {{!-- <form action="/api/create-event" method="POST"> --}}
-        <div>
+
             <form>
                 <input type="text" class="form-control first-name" name="first_name" value="" placeholder="First Name"
                     id="enter_text">
@@ -18,17 +30,16 @@
                     placeholder="Social Media" id="enter_text">
                 <input type="text" class="form-control zip_code" name="zip_code" value="" placeholder="Zip Code"
                     id="enter_text">
-                <textarea type="text" class="form-control description" name="description" value=""
-                    placeholder="Describe Yourself" id="enter_text"></textarea>
+                <input type="text" class="form-control description" name="description" value=""
+                    placeholder="Describe Yourself" id="enter_text">
 
-                <select class="groupSelection">
+                <select class="groupSelection" style="display: block; margin-left: 20px">
                     {{#each group}}
                     <option class="{{this.dataValues.id}}"> {{this.dataValues.group_name}}</option>
                     {{/each}}
-                    </select>
-            <button type="submit" class="btn btn-dark" id="submitMember">submit</button>
+                </select>
+            <button type="submit" class="cta-1 btn" id="submitMember" style="float:left; margin-top: 15px; margin-left: 20px; color: white">Submit</button>
             </form>
             <div>
-            </div>
+            
         </div>
-        {{>footer}}

@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require("../../models");
 
 // routing (html) /member
-router.get("/memberSearch:memberid", (req, res) => {
+router.get("/memberSearch/:memberid", (req, res) => {
    // get comments from db and send to template
 // res.render("member",[]);
    return Promise.all([

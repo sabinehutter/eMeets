@@ -9,7 +9,7 @@ module.exports = function() {
          {group_name:"Python"},
          {group_name:"Express"},
          {group_name:"Node"},
-         {group_name:"Group 6"},
+         {group_name:"Bootstrap"},
       ])
          .then(()=> {
             console.log("seed the database");

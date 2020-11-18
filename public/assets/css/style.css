@@ -1,9 +1,11 @@
-body {
-  width: 100%;
-  height: 900px;
+body{
+  max-width: 100%;
   background-color: #ffffff;
   /* color: white; */
-
+  max-width: 100%;
+  overflow-x: hidden; 
+  overflow-y: scroll;
+  
 }
 
 #top-bar {
@@ -26,6 +28,7 @@ body {
 
 .container {
  width: 80vw;
+ margin: auto
 }
 
 @media (min-width: 1200px) {
@@ -79,54 +82,206 @@ h1 {
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.1), 0 6px 20px 0 rgba(146, 146, 146, 0.19);
   border-radius: 8px;
-  margin-right: 6vw;
   margin-bottom: 60px;
   padding-right: 15px;
 }
 
 .img-bg {
-  width: 100vw;
-  height: auto;
-  margin-bottom: 5vh;
-}
-
-.container {
-  width: 80vw;
+  /* width:100%; */
+  height:100%;
+  position: absolute;
+  top:0;
+  z-index: -100;
+  object-fit: cover;
 }
 
 .container-fluid{
   width: 100%;
+  padding-left:0!important;
 }
 
 footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  /* position: fixed; */
   border-top: 1px solid #cfcfcf; 
   width: 100vw;
-  text-align: center;
+  text-align: left;
   padding: 15px;
+  display: block
 }
 
 li {
   list-style-type: none;
   display: inline;
-  padding-left: 10px;
+  padding-left: 30px;
   color: #ffffff;
 }
 
+ul {
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+ul:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 a{
-  color: #7e7e7e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover{
+  /* color: #ffffff!important; */
+  text-decoration: none!important;
 }
 
 #myVideo {
   position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 100%;
+    left: 100%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-70%) translateY(-50%);
 }
+
+.logo{
+  margin-left:60px;
+  margin-top: 15px;
+  height: 40px;
+  width: auto;
+}
+
+.cta-1{
+background-color: #F79626;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-right: 30px;
+padding-left: 30px;
+border-radius:30px;
+}
+
+.cta-2{
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius:30px;
+  color: #F79626;
+  }
+
+.header-title{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section-text{
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  color: #F79626;
+  margin-bottom: 40px;
+}
+
+.three-col{
+  width: 33.333%;
+  text-align: center;
+}
+.three-icon{
+  width: 80px;
+
+}
+
+.two-col{
+  height:100vh;
+}
+.two-up-img{
+  object-fit: cover;
+}
+
+.two-up-wrap{
+  padding: 15%;
+}
+
+.two-up-main{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 48px;
+  line-height: 1.25em;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.tag{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+form{
+  color: white !important;
+}
+
+.form-control{
+  background-color: transparent !important;
+  border: inherit !important;
+  border-bottom: #ffffff 1px solid  !important;
+  border-radius: 0% !important;
+  margin-bottom: 20px !important;
+  padding-left: 0px !important;
+  color: white !important;
+}
+
+.form-control:focus,.form-control:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.textarea:focus,.textarea:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+h1{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 20px
+}
+
+textarea{
+  color: white !important;
+  height: 120px !important;
+  border: 1px #ffffff solid !important;
+  background-color: transparent !important;
+}
+
+.group-header-img{
+  width:100vw;
+  height:45vh;
+  z-index: -100;
+  position: absolute;
+  top:0;
+  object-fit: cover;
+}
+
