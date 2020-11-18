@@ -28,9 +28,12 @@ for (i = 0; i < 10; i++) {
    const addTime = $("<div>").addClass("hour col-md-1").text(moment("9:00 AM", "hh:mm A").add(i, "hours").format("hA"));
    addTime.attr("data-time", moment("9:00 AM", "hh:mm A").add(i, "hours").format("hA"));
    //create a variable for the taskblock
-   const addTask = $("<textarea>").addClass("col-md-9");
+   const addTask = $("<textarea>").addClass("col-11");
    //create a variable for the save block
-   const saveButton = $("<button>").addClass("saveBtn col-md-1").html("<i class=\"fas fa-save\"></i>");
+   const saveButton = $("<button>").addClass("cta-1").html("Save");
+   saveButton.css("border", "none");
+   saveButton.css("color", "white");
+   saveButton.css("margin-bottom", "20px");
    // Placing content above in the DOM in order.
    //appending the container with the row
    $(".container-planner").append(addRow);
@@ -55,6 +58,6 @@ for (i = 0; i < 10; i++) {
    
 }
 // Save click event to store data in the local storage
-$(".saveBtn").on("click", function() {
+$(".cta-1").on("click", function() {
    localStorage.setItem($(this).siblings("div.hour").attr("data-time"), $(this).siblings("textarea").val());
 });

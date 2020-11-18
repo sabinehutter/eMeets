@@ -4,19 +4,19 @@
 
 
         {{#each members}}
-        {{!-- <div style="display : none"> --}}
+        <div style="display : none">
             <div class="col col-12 text-center" style = "display: none" data-id={{this.dataValues.group}}>
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">{{this.dataValues.first_name}} {{this.dataValues.last_name}}</h5>
-                        <p class="card-text">{{this.dataValues.description}}</p>
-                        <p class="card-text">Zip Code : {{this.dataValues.zip_code}}</p>
-                        <a href="''" + {{this.dataValues.social_qhandle}} + "''"
-                            class="btn btn-primary">{{this.dataValues.social_handle}}</a>
-                    </div>
+                    <div class="col col-12 text-center group-card">
+        <div>
+        <h5>{{this.dataValues.first_name}} {{this.dataValues.last_name}}</h5>
+        <p >{{this.dataValues.description}}</p>
+        <p>Zip Code: {{this.dataValues.zip_code}}</p>
+        <a href="''" + {{this.dataValues.social_handle}} + "''" class="btn btn-primary">{{this.dataValues.social_handle}}</a>
+        </div>
+        </div>
                 </div>
             </div>
-        {{!-- </div> --}}
+        </div>
 
         {{/each}}
     </div>
