@@ -1,12 +1,12 @@
-<div class="row">
-    <div class="col col-12 text-center">
-        <h1>Member Info</h1>
+<div class="row" style="margin: auto; display: block">
+    <div class="col-12 text-center">
+        <div class="section-text" style="margin-top: 50px">Member Info</div>
 
 
         {{#each members}}
-        <div style="display : none">
-            <div class="col col-12 text-center" data-id={{this.dataValues.id}}>
-                <div class="card" style="width: 20rem;">
+        <div style="display: none" style="width: 80vw">
+            <div class="col-12" data-id={{this.dataValues.id}}>
+                <div class="group-card">
                     <div class="card-body">
                         <h5 class="card-title">{{this.dataValues.first_name}} {{this.dataValues.last_name}}</h5>
                         <p class="card-text">{{this.dataValues.description}}</p>

@@ -1,18 +1,11 @@
-<div class="col-md-12 text-center">
-  {{log groups}}
-  {{log members}}
-  <select onchange=selectionChange() class= "memberSelection">
-{{#each members}}
-<option class = "{{this.dataValues.id}}" > {{this.dataValues.id}}. {{this.dataValues.first_name}} {{this.dataValues.last_name}}</option>
-{{/each}}
-  </select>
-  {{!-- {{#each groups}}
-  <div>{{this.dataValues.group_name}}
-    <button action="/api/follower" method="POST" type="submit" class="btn btn-dark " id="{{this.dataValues.id}}">Join</button>
-  </div>
-  {{/each}} --}}
-  
-    
-    
 
+    {{log groups}}
+    {{log members}}
+    <select onchange=selectionChange() class="memberSelection" style="margin: auto; display:block;">
+      {{#each members}}
+      <option class="{{this.dataValues.id}}"> {{this.dataValues.id}}. {{this.dataValues.first_name}}
+        {{this.dataValues.last_name}}</option>
+      {{/each}}
+    </select>
+  </div>
 </div>

@@ -81,7 +81,7 @@ h1 {
 .group-card {
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.1), 0 6px 20px 0 rgba(146, 146, 146, 0.19);
-  border-radius: 8px;
+  border-radius: 15px;
   margin-bottom: 60px;
   padding-right: 15px;
 }
@@ -181,6 +181,7 @@ border-radius:30px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  line-height: 1.25em;
 }
 
 .section-text{
@@ -197,6 +198,7 @@ border-radius:30px;
 }
 .three-icon{
   width: 80px;
+  margin-bottom: 20px;
 
 }
 
@@ -205,6 +207,7 @@ border-radius:30px;
 }
 .two-up-img{
   object-fit: cover;
+  width:100vw;
 }
 
 .two-up-wrap{
@@ -263,15 +266,23 @@ h1{
   line-height: 1.25em;
   color: #ffffff;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
   padding: 20px
 }
 
 textarea{
-  color: white !important;
+  color: rgb(230, 230, 230) !important;
   height: 120px !important;
-  border: 1px #ffffff solid !important;
+  border: 1px #e7e7e7 solid !important;
   background-color: transparent !important;
+}
+
+textarea:focus{
+  color: #000000 !important;
+}
+
+textarea:active{
+  color: #000000 !important;
 }
 
 .group-header-img{
