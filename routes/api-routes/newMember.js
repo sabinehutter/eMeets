@@ -7,13 +7,13 @@ const db = require("../../models");
 router.post("/newMemberRegister",function(req, res, next){
    db.Member.create({
       id: req.body.id,
-      joined_group: req.body.joined_group,
+      joined_group: req.body.group,
       first_name: req.body.first_name,
       last_name: req.body.last_name,
+      group: req.body.group,
       social_handle: req.body.social_handle,
       zip_code: req.body.zip_code,
-      description: req.body.description,
-      img_url: req.body.img_url,
+      description: req.body.description
    })
       .then (()=>{
          res.redirect ("/member");
