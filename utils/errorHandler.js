@@ -4,5 +4,5 @@ module.exports = function(err, req, res) {
    // log error to monitor
    // for development
    console.error(err.stack);
-   return res.redirect("/");
+   // return res.redirect("/");
 };

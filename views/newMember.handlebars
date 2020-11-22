@@ -19,7 +19,7 @@
 
         {{!-- <form action="/api/create-event" method="POST"> --}}
 
-            <form>
+            <form action="/api/newMemberRegister" method="POST">
                 <input type="text" class="form-control first-name" name="first_name" value="" placeholder="First Name"
                     id="enter_text">
                 <input type="text" class="form-control last-name" name="last_name" value="" placeholder="Last Name"
@@ -33,7 +33,7 @@
                 <input type="text" class="form-control description" name="description" value=""
                     placeholder="Describe Yourself" id="enter_text">
 
-                <select class="groupSelection group" style="display: block; margin-left: 20px">
+                <select class="groupSelection group" name="group" style="display: block; margin-left: 20px">
                     {{#each group}}
                     <option class="{{this.dataValues.id}}"> {{this.dataValues.group_name}}</option>
                     {{/each}}

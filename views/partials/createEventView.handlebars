@@ -17,12 +17,6 @@
                             placeholder="Date (MM/DD/YYYY)"
                             id="enter_text">
 
-                            <input type="text"
-                            class="form-control"
-                            name="event_group"
-                            value=""
-                            placeholder="Event Group"
-                            id="enter_text">
 
                      <input type="text"
                             class="form-control"
@@ -30,6 +24,15 @@
                             value=""
                             placeholder="Virtual Meeting Link or Address"
                             id="enter_text">
+
+
+                     <select name="event_group"
+                            value=""
+                            placeholder="Event Group"
+                            id="enter_text"
+                            style="display: block; margin:auto">
+                     <option> {{this.dataValues.group_name}}</option>
+                     </select>
 
                      <button type="submit" class="btn btn-dark event-submit" id="text-enter-button">Create Event</button>
 
