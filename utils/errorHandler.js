@@ -1,4 +1,4 @@
-module.exports = function(err, req, res) {
+module.exports = function(err, res) {
    // potential switch based on error code or msg
 
    // log error to monitor
