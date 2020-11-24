@@ -56,11 +56,11 @@
   Our application is currently linked to https://travis-ci.com/, to request the build logs please message!
   
   ## Questions
-    * [Link to Sabine Hutter Github](https://github.com/sabinehutter)
-    * [Link to Allie Lewis Github](https://github.com/allielewis07)
-    * [Link to Paul Toro Github](https://github.com/pault929)
-    * [Link to Kuan-Ting Pan Github](https://github.com/pankuanting102)
-    * [Link to Creator Brian Lalbeharry](https://github.com/blalbeharry)
+   * [Link to Sabine Hutter Github](https://github.com/sabinehutter)
+   * [Link to Allie Lewis Github](https://github.com/allielewis07)
+   * [Link to Paul Toro Github](https://github.com/pault929)
+   * [Link to Kuan-Ting Pan Github](https://github.com/pankuanting102)
+   * [Link to Creator Brian Lalbeharry](https://github.com/blalbeharry)
 
   Please forward all questions about the project to [SabineAHutter@gmail.com](SabineAHutter@gmail.com)
   
