@@ -15,7 +15,7 @@
    
    When the application begins it will appear in your terminal as the photo below. 
    
-   ![Application Entry](https://github.com/sabinehutter/Eat-Da-Burger-Application/blob/main/public/assets/burger_intro.png)
+   ![Application Entry](https://github.com/sabinehutter/Project2/blob/main/images/emeets.png?raw=true)
 
 
    
